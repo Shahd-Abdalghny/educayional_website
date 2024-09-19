@@ -1,0 +1,74 @@
+:root {
+    --main-color: #8bc1d1;
+    --secondery-color: #6192a4;
+    --box-shadow: 0 0 10px #ddd;
+    --padding-section: 60px 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+/* strart about us */
+.content-aboutus {
+    padding: var(--padding-section);
+
+
+}
+
+.content-aboutus .row .col-md-10 {
+    box-shadow: 0 0 10px #e0e0e0;
+    padding: 30px 40px;
+    margin: auto;
+
+}
+
+.content-aboutus h3 {
+
+    color: var(--main-color);
+    position: relative;
+    margin-bottom: 25px;
+
+}
+
+/* .content-aboutus h3::after {
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    left: 22%;
+    transform: translateX(-50%);
+    width: 45%;
+    height: 2px;
+    bottom: -17px;
+} */
+
+.content-aboutus p:first-child {
+    margin-top: 50px;
+}
+
+.content-aboutus .btn {
+    text-transform: uppercase;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 30px;
+    margin-top: 20px;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+
+}
+
+.content-aboutus .btn:hover {
+    background: none;
+    color: var(--main-color);
+    border-color: var(--main-color);
+
+}

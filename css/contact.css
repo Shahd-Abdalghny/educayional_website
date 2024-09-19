@@ -1,0 +1,100 @@
+:root {
+    --main-color: #8bc1d1;
+    --secondery-color: #6192a4;
+    --box-shadow: 0 0 10px #ddd;
+    --padding-section: 60px 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+/* srart contact */
+.contact-sec {
+    padding: var(--padding-section);
+}
+.contact-sec .row {
+    box-shadow: 0 0 10px #e0e0e0;
+    padding: 30px;
+
+}
+.contact-sec h2 {
+    text-transform: uppercase;
+    color: var(--main-color);
+position: relative;
+margin-bottom: 25px;
+}
+
+/* .contact-sec h2::after {
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    left: 80px;
+    transform: translateX(-50%);
+    width: 163px;
+    height: 2px;
+    bottom: -17px;
+
+} */
+.contact-sec p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #777;
+
+}
+.contact-sec img {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+@media(max-width:767px) {
+    .contact-sec img {
+        display: none;
+    }
+}
+.contact-sec .btn {
+    text-transform: uppercase;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 30px;
+    margin-top: 20px;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+
+}
+
+.contact-sec .btn:hover {
+    background: none;
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.field{
+    width: 100%;
+    border: 2px solid hsla(211, 20%, 77%, 0);
+outline: none;
+background-color: hsla(205, 46%, 85%, 0.19);
+padding: .5rem 1rem;
+margin-bottom: 22px;
+transition: .3s;
+}
+.field:hover{
+    background-color: rgb(219, 218, 218);
+    border: 2px solid var(--main-color);
+}
+textarea{
+    min-height: 150px;
+}
+
+

@@ -1,0 +1,95 @@
+/* main componant */
+:root {
+    --main-color: #8bc1d1;
+    --secondery-color: #6192a4;
+    --box-shadow: 0 0 10px #ddd;
+    --padding-section: 60px 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+
+/*Start Courses*/
+.container-courses {
+    padding: var(--padding-section);
+    background-color: #f5f5f5;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.container-courses .card {
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+}
+
+
+ .container-courses .card-img-top {
+    width: 100%;
+    height: 250px;
+} 
+.card .card-body h4 {
+
+    font-size: 18px;
+    margin-bottom: 15px;
+
+}
+.card-body .btn {
+    background-color: var(--main-color);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+
+}
+
+
+/*End Courses*/
+
+/*Start Requirements*/
+.req {
+    padding: var(--padding-section);
+}
+.req h2 {
+margin-bottom: 30px;
+color: var(--secondery-color);
+position: relative;
+}
+/* .req h2::after {
+    content: '';
+    width: 200px;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 9%;
+    transform: translateX(-50%);
+    bottom: -15px;
+} */
+
+.req p {
+    display: inline-block;
+    font-size: 17px;
+
+}
+.req p:first-child {
+   margin-left: 10px;
+
+}
+.req i {
+    margin-right: 15px;
+    font-size: 20px;
+    color: var(--main-color);
+
+}
+/*End Requirements*/

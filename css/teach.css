@@ -1,0 +1,93 @@
+:root {
+    --main-color: #8bc1d1;
+    --secondery-color: #6192a4;
+    --box-shadow: 0 0 10px #ddd;
+    --padding-section: 60px 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+
+}
+
+
+/*Start Courses*/
+
+.container-graphic {
+    padding-top: 60px;
+}
+
+.container-app {
+    padding-bottom: 60px;
+}
+
+.title-center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.title-center::before,
+.title-center::after {
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title-center::before {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    outline: 4px solid white;
+    bottom: -21px;
+    z-index: 1;
+}
+
+.title-center::after {
+    width: 200px;
+    height: 3px;
+    bottom: -17px;
+}
+
+.card {
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #e0e0e0 !important;
+}
+
+
+.card img {
+    border-radius: 50%;
+    padding: 15px 40px; /*T R B L*/
+
+}
+
+.card-body span {
+    color: var(--main-color);
+}
+
+.card-body .btn {
+    background-color: var(--main-color);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+
+}
